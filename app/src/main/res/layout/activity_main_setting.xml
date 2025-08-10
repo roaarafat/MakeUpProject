@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,12 +6,47 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
+    android:weightSum="7"
     tools:context=".activites.MainActivitySetting">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/pink2"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/headerLayout"
+            android:layout_marginStart="90dp"
+            android:text="Profile"
+            android:textColor="@color/pink"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:id="@+id/fm"
-        android:layout_marginTop="50dp"/>
+        android:layout_weight="6" />
 
 </LinearLayout>

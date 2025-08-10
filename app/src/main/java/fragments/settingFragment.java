@@ -1,5 +1,7 @@
 package fragments;
 
+import static com.example.makeupproject.R.id.signout;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -70,13 +72,7 @@ public class settingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
-        ImageView back_btn = view.findViewById(R.id.imageView3);
-        back_btn.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), Home.class);
-            startActivity(intent);
-        });
-
-        Button signOutBtn = view.findViewById(R.id.sign_out);
+        Button signOutBtn = view.findViewById(R.id.signout);
         signOutBtn.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), Login.class);
             startActivity(intent);

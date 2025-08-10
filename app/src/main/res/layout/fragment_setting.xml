@@ -8,45 +8,15 @@
     tools:context=".activites.MainActivitySetting">
 
     <RelativeLayout
-        android:id="@+id/headerLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:background="@color/pink2"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="23dp"
-            android:layout_height="20dp"
-            android:src="@drawable/arrow"
-            app:tint="@color/white" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/profileText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/headerLayout"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="90dp"
-        android:text="Profile"
-        android:textColor="@color/pink"
-        android:textSize="30dp"
-        android:textStyle="bold" />
-    <RelativeLayout
         android:id="@+id/contentLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/profileText"
-        android:layout_marginTop="20dp">
+        android:layout_height="wrap_content"
+        >
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
             android:src="@drawable/woman" />
         <TextView
             android:id="@+id/textView9"
@@ -203,19 +173,21 @@
                 android:src="@drawable/bbbb"
                 app:tint="@color/pink" />
         </RelativeLayout>
-        <Button
-            android:id="@+id/sign_out"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/orderHistoryLayout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="@color/pink"
-            android:padding="20dp"
-            android:text="Sign Out"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textAllCaps="false"/>
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:padding="20dp"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/contentLayout"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"/>
 </RelativeLayout>
